@@ -49,8 +49,10 @@ function App() {
   return (
     <Wrapper>
       <Title>todos</Title>
-      <TodoInput />
-      <TodoList />
+      <Card>
+        <TodoInput />
+        <TodoList />
+      </Card>
     </Wrapper>
   );
 }
