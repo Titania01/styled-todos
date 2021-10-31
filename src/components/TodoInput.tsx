@@ -33,7 +33,7 @@ const TodoInput = () => {
     }
   };
   return (
-    <TodoForm>
+    <TodoForm onSubmit={(event) => event.preventDefault()}>
       <TouchDown />
       <input
         type="text"
