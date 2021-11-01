@@ -1,7 +1,9 @@
 import styled from "styled-components";
 import "./App.scss";
+import Footer from "./components/Footer";
 import TodoInput from "./components/TodoInput";
 import TodoList from "./components/TodoList";
+import { todoEntity } from "./store/todo.entity";
 
 const Wrapper = styled.div`
   width: 40rem;
@@ -46,12 +48,14 @@ const Title = styled.h1`
 `;
 
 function App() {
+  const { items: todos } = todoEntity.use();
   return (
     <Wrapper>
       <Title>todos</Title>
       <Card>
         <TodoInput />
         <TodoList />
+        {todos.length && <Footer />}
       </Card>
     </Wrapper>
   );

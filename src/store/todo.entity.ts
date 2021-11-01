@@ -39,3 +39,13 @@ export const toggleTodo = (id: idTypes) => todoEntity.set((state) => ({
     return item
   })
 }))
+ 
+export const clearCompleted =() => todoEntity.set((state) => ({
+  ...state,
+  items: state.items.filter((item) => !item.done)
+}))
+
+export const setDisplaying =(value: displayingTypes) => todoEntity.set((state) => ({
+  ...state,
+  displaying: value
+}))

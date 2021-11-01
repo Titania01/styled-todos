@@ -5,8 +5,9 @@ import TouchDown from "./vector/TouchDown";
 
 const TodoForm = styled.form`
   display: flex;
+  align-items: center;
   background-color: white;
-  padding: 0.7;
+  padding: 0.7rem 1.7rem;
   border-bottom: ${(props) => props.theme.styles.borderBottom};
 
   input {

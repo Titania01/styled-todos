@@ -18,8 +18,10 @@ const TodoItem = styled.div`
   }
 `;
 const IsDone = styled.div`
-  width: 2rem;
-  height: 2rem;
+  width: 1rem;
+  height: 1rem;
+  display: flex;
+  align-items: center;
   border-radius: 50%;
   border: 1px solid grey;
 `;
