@@ -31,8 +31,6 @@ const Status = styled.span<{ active: boolean }>`
 
 const ClearCompleted = styled.span`
   cursor: pointer;
-  display: flex;
-  align-items: center;
   :hover {
     text-decoration: underline;
   }
@@ -42,6 +40,7 @@ const Footer = () => {
   const { displaying, items } = todoEntity.use();
   const showClearCompleted = items.some((item) => item.done);
   const totalItemsLeft = items.filter((item) => !item.done).length;
+
   return (
     <StyledFooter>
       <span>

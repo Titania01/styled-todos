@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { addTodo } from "../store/todo.entity";
+import { addTodo, todoEntity, toggleTouch } from "../store/todo.entity";
 import TouchDown from "./vector/TouchDown";
 
 const TodoForm = styled.form`
@@ -33,9 +33,11 @@ const TodoInput = () => {
       event.currentTarget.value = "";
     }
   };
+  const { items } = todoEntity.use();
+
   return (
     <TodoForm onSubmit={(event) => event.preventDefault()}>
-      <TouchDown />
+      {items.length ? <TouchDown onClick={toggleTouch} /> : <span />}
       <input
         type="text"
         onKeyPress={handleAddTodo}

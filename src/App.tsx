@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import "./App.scss";
 import Footer from "./components/Footer";
-import TodoInput from "./components/TodoInput";
+// import TodoInput from "./components/TodoInput";
 import TodoList from "./components/TodoList";
+import TodoInput from "./components/TodoInput";
 import { todoEntity } from "./store/todo.entity";
 
 const Wrapper = styled.div`
@@ -55,7 +56,7 @@ function App() {
       <Card>
         <TodoInput />
         <TodoList />
-        {todos.length && <Footer />}
+        {todos.length ? <Footer /> : []}
       </Card>
     </Wrapper>
   );

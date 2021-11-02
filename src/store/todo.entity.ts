@@ -49,3 +49,22 @@ export const setDisplaying =(value: displayingTypes) => todoEntity.set((state) =
   ...state,
   displaying: value
 }))
+
+export const toggleTouch = () => todoEntity.set((state) => {
+  let itemsUpdate:any[]
+  const selected = state.items.filter(item => item.done)
+  itemsUpdate = state.items.map(item => {
+    if(selected.length) {
+      if(selected.length === state.items.length) item.done = false
+      else{item.done =true}
+    }
+    else{item.done = true}
+
+    return item
+  })
+  return ({
+    ...state,
+    items: itemsUpdate
+  })
+
+})
