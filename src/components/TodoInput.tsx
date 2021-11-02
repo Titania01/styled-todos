@@ -11,7 +11,7 @@ const TodoForm = styled.form`
   border-bottom: ${(props) => props.theme.styles.borderBottom};
 
   input {
-    padding: 1rem;
+    padding: 1rem 0.5rem;
     flex: 1;
     outline: none;
     border: none;
@@ -19,6 +19,10 @@ const TodoForm = styled.form`
     line-height: 34px;
     font-weight: 300;
     color: ${(props) => props.theme.colors.grey};
+  }
+
+  ::placeholder {
+    font-style: italic;
   }
 `;
 

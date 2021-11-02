@@ -42,7 +42,7 @@ const Card = styled.div`
 
 const Title = styled.h1`
   color: ${(props) => props.theme.colors.lightred};
-  font-weight: 100;
+  font-weight: 400;
   font-size: 100px;
   text-align: center;
   line-height: 20px;

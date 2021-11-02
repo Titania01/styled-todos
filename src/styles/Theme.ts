@@ -5,7 +5,7 @@ const Theme = {
     grey: "#4d4d4d",
   },
   styles: {
-    borderBottom: "10x solid #ededed",
+    borderBottom: "1px solid #ededed",
     boxShadow: "0 2px 4px 0 rgba(0, 0, 0, 0.2)"
   }
 }

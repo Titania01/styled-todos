@@ -11,6 +11,7 @@ const StyledFooter = styled.footer`
   padding: 1rem;
   display: flex;
   align-items: center;
+  font-size: 14px;
   justify-content: space-between;
   color: ${(props) => props.theme.colors.grey};
 `;
@@ -18,6 +19,7 @@ const StyledFooter = styled.footer`
 const Statuses = styled.div`
   display: flex;
   align-items: center;
+  margin: 0 0.2rem 0 0;
 `;
 
 const Status = styled.span<{ active: boolean }>`
@@ -31,6 +33,7 @@ const Status = styled.span<{ active: boolean }>`
 
 const ClearCompleted = styled.span`
   cursor: pointer;
+  margin-left: 4rem;
   :hover {
     text-decoration: underline;
   }

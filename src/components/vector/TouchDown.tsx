@@ -5,8 +5,8 @@ function TouchDown(props: React.SVGProps<SVGSVGElement>) {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
-      width={36}
-      height={36}
+      width={48}
+      height={48}
       {...props}
     >
       <path fill="none" d="M0 0h24v24H0z" />
